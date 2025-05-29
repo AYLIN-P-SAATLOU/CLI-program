@@ -2,19 +2,19 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 18,
    "id": "af9c03ab-5771-4eec-8a83-03af3af75164",
    "metadata": {},
    "outputs": [
     {
-     "ename": "ImportError",
-     "evalue": "attempted relative import with no known parent package",
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'habit'",
      "output_type": "error",
      "traceback": [
       "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
-      "\u001b[31mImportError\u001b[39m                               Traceback (most recent call last)",
-      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[16]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[34;01m.\u001b[39;00m\u001b[34;01mhabit\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Habit\n\u001b[32m      3\u001b[39m \u001b[38;5;28;01mclass\u001b[39;00m \u001b[34;01mHabitTracker\u001b[39;00m:\n\u001b[32m      4\u001b[39m     \u001b[38;5;28;01mdef\u001b[39;00m \u001b[34m__init__\u001b[39m(\u001b[38;5;28mself\u001b[39m):\n",
-      "\u001b[31mImportError\u001b[39m: attempted relative import with no known parent package"
+      "\u001b[31mModuleNotFoundError\u001b[39m                       Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[18]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[34;01mhabit\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m Habit\n\u001b[32m      3\u001b[39m \u001b[38;5;28;01mclass\u001b[39;00m \u001b[34;01mHabitTracker\u001b[39;00m:\n\u001b[32m      4\u001b[39m     \u001b[38;5;28;01mdef\u001b[39;00m \u001b[34m__init__\u001b[39m(\u001b[38;5;28mself\u001b[39m):\n",
+      "\u001b[31mModuleNotFoundError\u001b[39m: No module named 'habit'"
      ]
     }
    ],

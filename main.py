@@ -2,15 +2,27 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
    "id": "2aef11eb-8483-4e3b-bb61-67655039039f",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'habit_tracker'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mModuleNotFoundError\u001b[39m                       Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[5]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[34;01mhabit_tracker\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m HabitTracker\n\u001b[32m      3\u001b[39m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[34mmain\u001b[39m():\n\u001b[32m      4\u001b[39m     tracker = HabitTracker()\n",
+      "\u001b[31mModuleNotFoundError\u001b[39m: No module named 'habit_tracker'"
+     ]
+    }
+   ],
    "source": [
     "from habit_tracker import HabitTracker\n",
     "\n",
     "def main():\n",
-    "    tracker = HabitTracker():\n",
+    "    tracker = HabitTracker()\n",
     "\n",
     "    while True:\n",
     "        print(\"\\n=== Habit Tracker Menu ===\")\n",
@@ -43,9 +55,19 @@
     "\n",
     "        else:\n",
     "            print(\"Invalid choice. Please try again.\")\n",
-    "    \n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    main()\n",
     "            "
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f4fd9360-48a3-4f12-a98d-fddd59f001f0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
