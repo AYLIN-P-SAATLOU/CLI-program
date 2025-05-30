@@ -1,68 +1,20 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 3,
-   "id": "98db69ab-a662-4be8-bcb1-24758114d27b",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "class Habit:\n",
-    "    def __init__(self, habit_name):\n",
-    "        self.habit_name = habit_name\n",
-    "        self.streak = 0\n",
-    "        self.completed_today = False\n",
-    "\n",
-    "    def mark_done(self):\n",
-    "        if not self.completed_today:\n",
-    "            self.streak += 1\n",
-    "            self.completed_today = True\n",
-    "            print(f\"Habit '{self.name}' marked as done. Streak is now {self.streak}.\")\n",
-    "        else:\n",
-    "            print(f\"Habit '{self.name}' is already marked as done today.\")\n",
-    "\n",
-    "    def reset_day(self):\n",
-    "        status = \"✓\" if self.completed_today else \"✗\"\n",
-    "        return f\"{self.name} - Sterak: {self.streak} - Done Today:{status}\"\n",
-    "        "
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "660a13f0-3ea1-4575-a532-3282ddf8e578",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "7ecfe2ba-e627-4ed6-b5c8-716eded38bda",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.12.9"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+class Habit:
+    def __init__(self, name):
+        self.name = name
+        self.streak = 0
+        self.completed_today = False
+
+    def mark_done(self):
+        if not self.completed_today:
+            self.streak += 1
+            self.completed_today = True
+            print(f"Habit '{self.name}' marked as done. Streak is now {self.streak}.")
+        else:
+            print(f"Habit '{self.name}' is already marked as done today.")
+
+    def reset_day(self):
+        self.completed_today = False
+
+    def __str__(self):
+        status = "✓" if self.completed_today else "✗"
+        return f"{self.name} - Streak: {self.streak} - Done Today: {status}"
