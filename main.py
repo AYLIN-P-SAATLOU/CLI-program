@@ -1,4 +1,4 @@
-for habit_tracker import HabitTracker
+from habit_tracker import HabitTracker
 
 def main():
     tracker = HabitTracker()
